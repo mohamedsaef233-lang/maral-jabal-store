@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب منتجات مارال جبل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="guarantee">
+            بالتأكيد منتجاتنا اصلية 100% و مضمونة النتائج و امنة المستخدم.
+        </div>
+        
+        <div class="header">
+            <h1>اختر بياناتك لشراء المنتج</h1>
+        </div>
+        
+        <div class="price">
+            السعر 99 شيكل
+        </div>
+        
+        <form id="order-form">
+            <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="whatsapp">رقم واتس اب للتواصل</label>
+                <input type="tel" id="whatsapp" name="whatsapp">
+            </div>
+            
+            <div class="form-group">
+                <label for="city">المحافظة / المقاطعة / المدينة</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">العنوان بالتفصيل</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            
+            <div class="product-selection">
+                <h2>*المنتج المطلوب*</h2>
+                
+                <div class="product-option" data-price="99.00">
+                    <div class="product-name">عبوة واحدة من مارال جبل</div>
+                    <div class="product-price">99.00 شيكل</div>
+                    <div style="clear: both;"></div>
+                </div>
+                
+                <div class="product-option" data-price="149.00">
+                    <div class="product-name">عبوتين مارال جبل</div>
+                    <div class="product-price">149.00 شيكل</div>
+                    <div style="clear: both;"></div>
+                </div>
+                
+                <div class="product-option" data-price="169.00">
+                    <div class="product-name">ثلاث عبوات من مارال جبل</div>
+                    <div class="product-price">169.00 شيكل</div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+            
+            <input type="hidden" id="selected-product" name="selected-product" value="">
+            <input type="hidden" id="selected-price" name="selected-price" value="">
+            
+            <button type="submit" class="submit-btn">تسجيل طلب الشراء</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
